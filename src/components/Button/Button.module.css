@@ -1,0 +1,32 @@
+.button {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  height: 50px;
+  padding-inline: 10px;
+  border: 1px solid var(--c-blue-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--c-blue-dark);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: var(--c-blue);
+    border: 1px solid var(--c-blue);
+  }
+  &:hover .text {
+    color: white;
+  }
+}
+
+.text {
+  font-family: var(--f-montserrat);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--c-white);
+  font-size: 12px;
+}
